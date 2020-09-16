@@ -10,6 +10,7 @@ public class Teszt {
         System.out.println(rp1.getPerimeter() + " " + rp1.getArea());
         System.out.println(rp2.getPerimeter() + " " + rp2.getArea());
     }
+   
 
     
 }

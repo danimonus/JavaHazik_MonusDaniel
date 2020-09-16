@@ -11,8 +11,8 @@ public static void main(String[] args) {
     
     p1.setY(p1.getY()+5);
     p2.setY(p2.getY()+5);
-    p3.setX((float) (p3.getX()-3.4));
-    p4.setX((float) (p4.getX()-3.4));
+    p3.setX((p3.getX()-3.4));
+    p4.setX((p4.getX()-3.4));
     
     System.out.println(p1.getX() + " " + p1.getY());
     System.out.println(p2.getX() + " " + p2.getY());

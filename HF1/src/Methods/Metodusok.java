@@ -4,12 +4,26 @@ import java.util.Arrays;
 
 public class Metodusok {
 
+    /**
+     * Szamokat tömbbe rakja majd növekvő sorrendben visszaadja.
+     * @param a
+     * @param b
+     * @param c 
+     */
+    
 public static void novekvo(int a, int b, int c){
 int[] array = {a,b,c};
 Arrays.sort(array);
     System.out.println(Arrays.toString(array));
 }
 
+/**
+ * Szamokat tömbbe rakja majd visszaadja a legkisebb értékü számot, illetve az  
+ * abszolutertekek közül a legnagyobb értékü számot.
+ * @param a
+ * @param b
+ * @param c 
+ */
 public static void minabmax(double a, double b, double c){
 double[] array = {a,b,c};
 double min = Double.MAX_VALUE;
@@ -28,7 +42,13 @@ double max = Double.MIN_VALUE;
     }
     System.out.println("Min=" + min + " Max=" + max);
 }
-
+/**
+ * Négy értéket ír a kijelzőre attól függően, hogy a d értéke 0-tól nagyobb egyenlő, vagy kisebb.
+ * @param a
+ * @param b
+ * @param c
+ * @param d 
+ */
 public static void sorrend(double a, double b, double c, double d){
     if (d >= 0) {
         System.out.println(a + " " + c + " " + b + " " +d);
@@ -38,6 +58,13 @@ public static void sorrend(double a, double b, double c, double d){
 
 }
 
+/**
+ * A három kapott értékből eldönti, hogy szerkeztehető háromszög.
+ * @param a
+ * @param b
+ * @param c
+ * @return - true-t add vissza ha szerkezthető háromszög, false-t ha nem.
+ */
 public static boolean haromszoge(int a, int b, int c){
     if (a<=0 || b<=0 || c<=0) {
         return false;
@@ -50,6 +77,12 @@ public static boolean haromszoge(int a, int b, int c){
         return false;
 }
 
+/**
+ * A két megadott évszám között kiszámolja, hogy melyik szökőév, és azokat az értékeket
+ * kiírja a képernyőre.
+ * @param a
+ * @param b 
+ */
 public static void szokoev(int a, int b){
     int db=0;
     for (int i = a; i <= b; i++) {
@@ -60,6 +93,11 @@ public static void szokoev(int a, int b){
     System.out.println(db);
 }
 
+/**
+ * A megadott értékről eldönti, hogy megyegezik-e valamelyik osztályzattal és ha igen akkor
+ * kiírja szövegesen az értékelést, ha nincs ilyen osztályzat akkor visszaadja, hogy nincs ilyen jegy.
+ * @param a 
+ */
 public static void erdemjegy(int a){
 
     switch(a){
@@ -72,6 +110,12 @@ public static void erdemjegy(int a){
     }   
 }
 
+/**
+ * Kiszámolja a megadott érték hányadosát kivonásos módszerrel. Amíg az a értéke nagyobb mint a b értéke
+ * addig kivonja belőle a b-t és a hányados értékét növeli 1-el.
+ * @param a
+ * @param b 
+ */
  public static void osztas(int a, int b){
  int hanyados=0;
  
@@ -84,6 +128,10 @@ public static void erdemjegy(int a){
  
  }
 
+ /**
+  * Eldönti a számról, hogy primszám-e, majd kiírja megformázottan a képernyőre.
+  * @param a 
+  */
     public static void prim(int a){
     boolean f = false;
         for (int i = 2; i < a/2; i++) {
@@ -100,6 +148,10 @@ public static void erdemjegy(int a){
             System.out.println("A(z) "+a+" az nem prímszám!");
     }
     
+    /**
+     * Kiírja a képernyőre a fibonacci sorozat első n elemét.
+     * @param n 
+     */
     public static void fibo(int n){
     int a = 0;
     int b = 1;
@@ -115,6 +167,12 @@ public static void erdemjegy(int a){
         System.out.println("");
     }
     
+    /**
+     * Visszaadja a megadott számjegy sorozat forditott változatát. 
+     * @param n
+     * @param ujszam 
+     */
+    
     public static void ujszam(int n, int ujszam){
     //ujszam = 0;
         do {
@@ -125,6 +183,10 @@ public static void erdemjegy(int a){
         System.out.println(ujszam);
     }
     
+    /**
+     * Visszaadja egy 0-12 közötti szám faktoriálisát.
+     * @param n 
+     */
     public static void faktorialis(int n){
     long a = 1;
         for (int i = 0; i < n; i++) {
@@ -134,6 +196,12 @@ public static void erdemjegy(int a){
         
     }
     
+    /**
+     * Két szám között visszaadja azokat a számokat amelyek oszthatók k-val.
+     * @param k
+     * @param n1
+     * @param n2 
+     */
     public static void oszthato(int k,int n1, int n2){
     
         for (int i = n1; i <= n2; i++) {
@@ -144,6 +212,12 @@ public static void erdemjegy(int a){
         System.out.println("");
     }
 
+    /**
+     * Visszaadja az n-től nagyobb fibonacci sorozat tagját.
+     * @param n
+     * @return - fibonacci sorozat n+1.-ik tagja
+     */
+    
      public static int fibon(int n){
     int a = 0;
     int b = 1;
@@ -160,6 +234,11 @@ public static void erdemjegy(int a){
         }
         return eredmeny;
      }
+     
+     /**
+      * Visszaadja az 1000-nél kisebb számokat, amelyek
+    egyenlők számjegyeik köbének összegével.
+      */
      
          public static void kisszamok(){
     

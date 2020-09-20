@@ -59,15 +59,31 @@ private double y;
     public void setY(double y) {
         this.y = y;
     }
+    
+    /**
+     * Visszaadja a sokszög kerületét. 
+     * @return - Sokszög kerülete. K = n*side
+     */
 
     public double getPerimeter(){
     return this.n*this.side;
     }
     
+    /**
+     * Visszaadja a sokszög területét. 
+     * @return Sokszög területe. T = n*pow(side,2)/4*tan(pi/n)
+     */
+    
     public double getArea(){
     return (this.n*Math.pow(this.side, 2))/(4*Math.tan(Math.PI/this.n));
     }
 
+    
+    /**
+     * Vissszaadja a formázott eredményt.
+     * @return - toString
+     */
+    
     @Override
     public String toString() {
         return "n=" + n + ", side=" + side + ", x=" + x + ", y=" + y + 

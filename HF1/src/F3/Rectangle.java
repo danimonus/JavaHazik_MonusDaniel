@@ -15,14 +15,29 @@ public double height;
         this.height = height;
     }
     
+    /**
+     * Visszaadja a téglalap területét. 
+     * @return - Téglalap területe. T = h*w;
+     */
+    
     public double getArea(){
     return this.height*this.width;
     }
+    
+    /**
+     * Visszaadja a téglalap kerületét.
+     * @return - Téglalap területe. K = 2*(h+w);
+     */
     
     public double getPerimeter(){
     return 2 * (this.height+this.width);
     }
 
+    /**
+     * Visszaadja a formázott stringet.
+     * @return - toString
+     */
+    
     @Override
     public String toString() {
         return "width=" + width + ", height=" + height + " Area="

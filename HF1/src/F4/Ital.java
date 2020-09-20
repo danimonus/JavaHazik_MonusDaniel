@@ -49,12 +49,21 @@ protected Date gyartasiDatum;
         this.gyartasiDatum = gyartasiDatum;
     }
 
+    /**
+     * toString formázott kiiratása
+     * @return - toString
+     */
+    
     @Override
     public String toString() {
         return nev + ", " + kiszereles + " dl, " + getAr() + " Ft";
     }
 
-   
+   /**
+    * Osszehasonlitja az objektumokat nev,kiszerelés és dátum szerint
+    * @param obj
+    * @return - ha megegyezik akkor true amúgy false
+    */
 
     @Override
     public boolean equals(Object obj) {
@@ -80,6 +89,11 @@ protected Date gyartasiDatum;
         return true;
     }
 
+    /**
+     * Kiszámolja a Ft árat Euróban
+     * @return - ar/345-el azaz euróban írja ki az árat
+     */
+    
     public static int getArEuroban(){
     return getAr()/345;
     }

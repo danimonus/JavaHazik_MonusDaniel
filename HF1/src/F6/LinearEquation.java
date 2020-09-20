@@ -41,6 +41,11 @@ private int f;
     public int getF() {
         return f;
     }
+    
+    /**
+     * Visszaadja, hogy megoldható-e az egyenletrendszer
+     * @return - true ha igen / false ha nem
+     */
 
 public boolean isSolvable(){
     if ((this.a*this.d-this.b*this.c) != 0) {
@@ -58,6 +63,11 @@ public boolean isSolvable(){
     return ((a*f-e*c) / (a*d-b*c));
     }
 
+    /**
+     * Megoldást írja ki a terminálra.
+     * @return - toString
+     */
+    
     @Override
     public String toString() {
         if (a*d-b*c == 0) {

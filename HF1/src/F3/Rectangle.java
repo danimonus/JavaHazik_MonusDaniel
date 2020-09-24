@@ -1,15 +1,27 @@
 package F3;
 
+/**
+ * Négyzetet leíró osztály a magasságával és a szélességével megadva.
+ * @author monus
+ */
 public class Rectangle {
 
 public double width;
 public double height;
 
+
+/**
+ * Argumentum nélküli konstruktor. Alapértelmezett négyzetet hoz létre.
+ */
     public Rectangle() {
         this.width = 1;
         this.height = 1;
     }
-
+/**
+ * height és width argumentumokkal ellátott konstruktor.
+ * @param height
+ * @param width 
+ */
     public Rectangle(double height,double width) {
         this.width = width;
         this.height = height;

@@ -1,5 +1,8 @@
 package F3;
-
+/**
+ * Rectangle osztaly teszt osztalya.
+ * @author monus
+ */
 public class Main {
 
     public static void main(String[] args) {

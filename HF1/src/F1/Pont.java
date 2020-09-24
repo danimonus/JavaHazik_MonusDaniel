@@ -1,10 +1,20 @@
 package F1;
 
+/**
+ * Egy pontot x és y koordinátáival leíró osztály.
+ * @author monus
+ */
+
 public class Pont {
 
 private double x;
 private double y;
 
+    /**
+     * x,y argumentumokkal ellátott konstruktor
+     * @param x
+     * @param y 
+     */
     public Pont(double x, double y) {
         this.x = x;
         this.y = y;

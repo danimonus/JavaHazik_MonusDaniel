@@ -1,5 +1,11 @@
 package F6;
 
+/**
+ * Egyenletrendszerről eldönti meglehet-e oldani. Ha meglehet kiírja a két egyenletnek a megoldását,
+ * ha nem akkor pedig kiírja, hogy nem oldahtó meg.
+ * @author monus
+ */
+
 public class LinearEquation {
 
 private int a;
@@ -9,6 +15,15 @@ private int d;
 private int e;
 private int f;
 
+/**
+ * Egynenletrendszer elemeinek argumentumaival ellátott konstruktor.
+ * @param a
+ * @param b
+ * @param c
+ * @param d
+ * @param e
+ * @param f 
+ */
     public LinearEquation(int a, int b, int c, int d, int e, int f) {
         this.a = a;
         this.b = b;

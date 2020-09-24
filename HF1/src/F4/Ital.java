@@ -1,5 +1,10 @@
 package F4;
 
+/**
+ * Egy üditős dobozt leíró osztály, jellemezve a nevével a kiszereléssel 
+ * az araval és a gyartasi datumaval.
+ */
+
 import java.util.Date;
 import java.util.Objects;
 
@@ -10,6 +15,12 @@ protected String kiszereles;
 private static int ar;
 protected Date gyartasiDatum;
 
+/**
+ * nev és kiszerelés argumentummal ellátott konstruktor, törzsében a datumnak a jelenlegi datumot adja meg
+ * arnak pedig alapértelmezetten 10-et ad meg.
+ * @param nev
+ * @param kiszereles 
+ */
     public Ital(String nev, String kiszereles) {
         this.nev = nev;
         this.kiszereles = kiszereles;
@@ -66,27 +77,15 @@ protected Date gyartasiDatum;
     */
 
     @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null) {
+    public boolean equals(Object obj) {    
+        if (obj == null && !(obj instanceof Ital)) {
             return false;
         }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
-        final Ital other = (Ital) obj;
-        if (!Objects.equals(this.nev, other.nev)) {
-            return false;
-        }
-        if (!Objects.equals(this.kiszereles, other.kiszereles)) {
-            return false;
-        }
-        if (!Objects.equals(this.gyartasiDatum, other.gyartasiDatum)) {
-            return false;
-        }
-        return true;
+       
+        Ital i = (Ital) obj;
+        
+        return this.gyartasiDatum.equals(i.getGyartasiDatum()) && this.kiszereles == i.getKiszereles()
+                && this.nev.equals(i.getNev());
     }
 
     /**

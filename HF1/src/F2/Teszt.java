@@ -1,4 +1,8 @@
 package F2;
+/**
+ * RegularPolygon osztaly teszt osztalya.
+ * @author monus
+ */
 
 public class Teszt {
 

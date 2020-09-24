@@ -1,5 +1,10 @@
 package F5;
 
+/**
+ * QuadraticEquation osztaly teszt osztalya.
+ * @author monus
+ */
+
 public class Test{
 
     public static void main(String[] args) {

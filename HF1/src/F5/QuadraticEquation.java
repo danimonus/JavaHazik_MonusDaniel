@@ -1,11 +1,23 @@
 package F5;
 
+/**
+ * Másodfoku egyenletet írja le, illetve számolja ki a diszkriminánsát. Illetve a két gyökét.
+ * Ha a két gyök megegyezik akkor az első gyököt adja vissza.
+ * @author monus
+ */
+
 public class QuadraticEquation {
 
 private int a;
 private int b;
 private int c;
 
+/**
+ * a,b,c argumentumokkal rendelkezo konstruktor, a masodfoku egyenlet elemei.
+ * @param a
+ * @param b
+ * @param c 
+ */
     public QuadraticEquation(int a, int b, int c) {
         this.a = a;
         this.b = b;

@@ -1,4 +1,8 @@
 package F6;
+/**
+ * LinearEquation osztaly teszt osztalya.
+ * @author monus
+ */
 
 public class Test {
 

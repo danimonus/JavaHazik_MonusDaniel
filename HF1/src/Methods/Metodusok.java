@@ -1,5 +1,10 @@
 package Methods;
 
+/**
+ * Metodusokkal feltoltott osztaly. A main az osszes metodusnak a megoldasat kiirja
+ * a terminalra.
+ */
+
 import java.util.Arrays;
 
 public class Metodusok {

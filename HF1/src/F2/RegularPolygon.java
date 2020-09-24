@@ -1,5 +1,11 @@
 package F2;
 
+/**
+ * Egy sokszöget definiálló osztály az oldalai számával, az oldal hosszúságával és a koordináta
+ * pontjaival leírva.
+ * @author monus
+ */
+
 public class RegularPolygon {
 
 private int n;

@@ -64,14 +64,7 @@ public class fejesek {
 
         for (int i = 0; i < n; i++) {
             if (lista[i].equals(elotte)) {
-                System.out.println(piros + " " + kek);
-
-                if (i % 2 == 0) {
-                    piros++;
-                } else {
-                    kek++;
-                }
-
+                System.out.println(piros + " " + kek);                
             }
 
             if (i % 2 == 0) {

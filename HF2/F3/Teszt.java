@@ -65,12 +65,10 @@ public class Teszt {
         
         
         Kocsma[] ko = adottItaltKinaloKocsmak("i3", ve);
+        
+        
         System.out.println(Arrays.toString(ko));
-       
-        for (int i = 0; i < ko.length; i++) {
-            System.out.println(ko[i].getNev());
-        }
-    
+
 
     
     

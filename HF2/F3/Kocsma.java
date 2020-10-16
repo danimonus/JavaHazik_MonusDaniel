@@ -1,5 +1,7 @@
 package F3;
 
+import java.util.Arrays;
+
 /**
  * Örökli a VendeglatoipariEygsegtöl az összes hozzáférhető adatmezőt és metódust.
  * Létrehoz egy sorlap nevü String tömböt.
@@ -21,7 +23,9 @@ private String[] sorlap;
 
     @Override
     public String toString() {               
-        return "sorlap=" + sorlap + " " + super.getNev() + "\n";
+        //return "sorlap=" + sorlap + " " + super.getNev() + "\n";
+    
+         return super.toString() + " Sörlap:" + Arrays.toString(sorlap) + "\n";
     }
 
     

@@ -9,13 +9,14 @@ public class Teszt {
         int flag = 0;
 
         for (int i = 0; i < values.length - 4; i++) {
-
+            System.out.println(values[i] +" "+ values[1] +" "+ values[2]+" "+ values[3] +" "+ values[4]);
             if (values[i] == values[i + 1] && values[i] == values[i + 2]
-                    && values[i] == values[i + 3] && values[i] == values[i + 4]) {
+                    && values[i] == values[i + 3]) {
                 flag = 1;
             }
 
         }
+        
         if (flag == 1) {
             return true;
         } else {
@@ -25,7 +26,7 @@ public class Teszt {
 
     public static void main(String[] args) {
 
-        int[] numbers = {3, 3, 2, 3, 3, 6};
+        int[] numbers = {4,4,4,4,3,2,5,2};
 
         System.out.println(isConsecutiveFour(numbers));
 

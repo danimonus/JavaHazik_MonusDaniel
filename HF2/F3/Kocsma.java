@@ -23,7 +23,6 @@ private String[] sorlap;
 
     @Override
     public String toString() {               
-        //return "sorlap=" + sorlap + " " + super.getNev() + "\n";
     
          return super.toString() + " Sörlap:" + Arrays.toString(sorlap) + "\n";
     }

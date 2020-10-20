@@ -6,7 +6,7 @@ package F1;
  * alkoholTartalom adatmenővel rendelkezik.
  * @author monus
  */
-public class ErjedtGyumolcs extends Gyumolcs{
+public class ErjedtGyumolcs extends Gyumolcs implements Alkoholos{
 
 private double alkoholTartalom;
 

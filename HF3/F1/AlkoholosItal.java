@@ -6,7 +6,7 @@ package F1;
  * és alkoholtartalmát írja le.
  * @author monus
  */
-public abstract class AlkoholosItal extends Ital{
+public abstract class AlkoholosItal extends Ital implements Alkoholos{
     
     private String iz;
     private double alkoholTartalom;
